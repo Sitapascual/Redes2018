@@ -155,6 +155,7 @@ public class NGController {
 		int attempts = MAX_NUMBER_OF_ATTEMPTS;
 		//We try to obtain a token from the broker
 		while(token == 0){
+			System.out.println(token);
 			try {
 				token=brokerClient.getToken();
 			} catch (IOException e1) {

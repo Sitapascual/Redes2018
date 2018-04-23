@@ -24,7 +24,7 @@ public abstract class NGMessage {
 
 	//Method to be implemented specifically by each subclass of NGMessage
 	protected abstract byte[] toByteArray();
-	
+		
 	//Reads the opcode of the incoming message and uses the subclass to parse the rest of the message
 	public static NGMessage readMessageFromSocket(DataInputStream dis) throws IOException { 
 		/*//We use the operation to differentiate among all the subclasses
